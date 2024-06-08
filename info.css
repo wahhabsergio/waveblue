@@ -1,0 +1,183 @@
+#Sobre{
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+#robo{
+    width: 420px;
+    margin-left: -200px;
+    height: auto;
+}
+
+#Sobre .TittleSub{
+    font-size: 3rem;
+}
+
+
+.pessoa{
+    width: 50%;
+}
+
+#Desc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#comen{
+    text-shadow: none;
+    color: black;
+}
+
+.feed{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+#Avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.feedback{
+    color: #0099ff;
+}
+
+.feedback p span{
+
+    color: #0099ff;
+}
+
+.TittleSec{
+    color: #0099ff;
+}
+
+.inputbox {
+    position: relative;
+    width: 196px;
+  }
+  
+  .inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .inputbox input:valid ~span,
+  .inputbox input:focus ~span {
+    color: #45f3ff;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0,75em;
+  }
+
+  .comm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .comm > h2{
+    color: #0099ff;
+  }
+  
+  .inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 44px;
+  }
+
+@media screen and (max-width: 1170px) {
+    .pessoa{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #robo{
+        display: none;
+    }
+
+    #Desc{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .pessoa .TittleSub{
+        text-align: center;
+    }
+
+    .TittleSub{
+        text-align: center;
+    }
+    
+    .feedback{
+        width: 50vw;
+    }
+
+    #btn{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #Sobre .TittleSub{
+        font-size: 2rem;
+    }
+
+    #feedback{
+        width: 100%;
+    }
+
+    #Desc{
+        flex-direction: column;
+    }
+
+}
